@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+                 
+        <!--<script src="./node_modules/core-js/client/shim.min.js"></script>
+        <script src="./node_modules/systemjs/dist/system.js"></script>-->
+        <script src="./bundles/polyfills.min.js"></script>
+        <script src="./system.config.js"></script>
+        
+        
+    </head>
+    <body>
+        <div class="container theme-showcase">
+            <h1 >Ejercicio TS2</h1>
+            <div class="jumbotron">
+                <div class="form-inline form-group">
+                    <label>Introduzca una tarea</label>
+                    <input style="text-transform: uppercase" id="caja" class="form-control" placeholder="Tarea"/>
+                    <button id="boton" class="btn btn-primary">Añadir</button>
+                </div>
+                
+                <ul class="list-group" id="lista">
+                </ul>
+            </div>
+        </div>
+        <script>
+            System.import("app");
+        </script>
+    </body>
+</html>
